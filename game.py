@@ -16,3 +16,5 @@ if choice == 1:
         choice_name = 'paper'
     else: 
         choice_name = 'scissor'
+        print("user choice is: " + choice_name) 
+    print("\nNow its computer turn.......") 
