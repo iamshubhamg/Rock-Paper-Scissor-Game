@@ -32,3 +32,15 @@ if choice == 1:
   
     print(choice_name + " V/s " + comp_choice_name) 
   #condition for winning
+  if((choice == 1 and comp_choice == 2) or
+      (choice == 2 and comp_choice ==1 )): 
+        print("paper wins => ", end = "") 
+        result = "paper"
+          
+    elif((choice == 1 and comp_choice == 3) or
+        (choice == 3 and comp_choice == 1)): 
+        print("Rock wins =>", end = "") 
+        result = "Rock"
+    else: 
+        print("scissor wins =>", end = "") 
+        result = "scissor"
