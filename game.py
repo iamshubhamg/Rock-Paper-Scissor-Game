@@ -31,7 +31,7 @@ if choice == 1:
     print("Computer choice is: " + comp_choice_name) 
   
     print(choice_name + " V/s " + comp_choice_name) 
-  #condition for winning
+            #condition for winning
   if((choice == 1 and comp_choice == 2) or
       (choice == 2 and comp_choice ==1 )): 
         print("paper wins => ", end = "") 
@@ -44,3 +44,15 @@ if choice == 1:
     else: 
         print("scissor wins =>", end = "") 
         result = "scissor"
+        if result == choice_name: 
+        print("<== User wins ==>") 
+    else: 
+        print("<== Computer wins ==>")   
+    print("Do you want to play again? (Y/N)") 
+    ans = input()
+    # if user input n or N then condition is True 
+    if ans == 'n' or ans == 'N': 
+        break
+      
+
+print("\nThanks for playing") 
